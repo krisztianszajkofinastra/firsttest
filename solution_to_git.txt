@@ -1,0 +1,21 @@
+Problem:
+
+adott workspace
+gitflowtool rebase
+gitflowtool push
+probléma: eltûnt 1 kommit
+visszahozható-e
+
+Attempt:
+
+git reflog --> összes HEAD mûvelet listázása, kommit megkeresése.
+
+(persze nem találtuk, miért is találtuk volna) -> a kommit sosem került le a local repoba.
+
+
+Visszahozható?
+
+Talán remote reflogból ha van ilyen egyébként nem. A kommit megvolt másik branchen szerencsére.
+
+A gitflowtool lokálisan rebasel, ha nincs fetch, vagy pull nem fog szólni. A push meg felülírta a nem pulloltal a remote-ot. 
+
